@@ -13,6 +13,9 @@ export const JUPITER =
 export const DEXTOOLS =
   "";
 
+  export const PUMP =
+  "pump.fun/";
+
 export const TELEGRAM_DEV = "https://t.me/";
 export const TWITTER_DEV = "https://twitter.com/";
 

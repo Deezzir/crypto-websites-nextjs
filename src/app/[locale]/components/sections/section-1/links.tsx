@@ -12,6 +12,7 @@ import {
   TELEGRAM,
   TWITTER,
   DEXTOOLS,
+  PUMP,
 } from "@/app/[locale]/urls";
 
 const buttonClass =
@@ -25,7 +26,7 @@ export const Links = (props: any) => {
       <a target="_blank" href={TWITTER} className={buttonClass}>
         <XIcon iconClass={iconClass} />
       </a>
-      <a target="_blank" href={TELEGRAM} className={buttonClass}>
+      {/* <a target="_blank" href={TELEGRAM} className={buttonClass}>
         <TgIcon iconClass={iconClass} />
       </a>
 
@@ -34,13 +35,16 @@ export const Links = (props: any) => {
       </a>
       <a target="_blank" href={JUPITER} className={buttonClass}>
         <JupiterIcon iconClass={iconClass} />
-      </a>
+      </a> */}
       <a target="_blank" href={DEXSCREENER} className={buttonClass}>
         <DexscreenerIcon iconClass={iconClass} />
       </a>
-      <a target="_blank" href={DEXTOOLS} className={buttonClass}>
-        <DextoolsIcon iconClass={iconClass} />
+      <a className='w-14 h-14 hover:scale-[1.05] transition duration-100' target="_blank" href={PUMP}>
+        <img src="./logo.webp" alt="punp fun icon"/>
       </a>
+      {/* <a target="_blank" href={DEXTOOLS} className={buttonClass}>
+        <DextoolsIcon iconClass={iconClass} />
+      </a> */}
     </div>
   );
 };
