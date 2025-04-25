@@ -14,7 +14,7 @@ export const DEXTOOLS =
   "";
 
   export const PUMP =
-  "pump.fun/Cb4ycfTsJdGz8KRyPie1bs1D249hTUgaF8mwGdYvpump";
+  "https://pump.fun/Cb4ycfTsJdGz8KRyPie1bs1D249hTUgaF8mwGdYvpump";
 
 export const TELEGRAM_DEV = "https://t.me/";
 export const TWITTER_DEV = "https://x.com/i/communities/1915895866658836638";
