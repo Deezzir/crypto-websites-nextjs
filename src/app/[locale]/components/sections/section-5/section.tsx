@@ -63,10 +63,10 @@ export const SectionFive = (props: any) => {
         <AppearWrapper>
           <Wrapper>
             <div className="flex flex-col md:gap-16">
-              <HeaderText customClass={"uppercase text-center"} text={t("1")} />
+              {/* <HeaderText customClass={"uppercase text-center"} text={t("1")} /> */}
               <div className="flex flex-col gap-8 lg:flex-row content-center py-16 justify-center">
                 <div className="flex flex-col content-center justify-center items-center lg:w-5/12">
-                  <BigText
+                  {/* <BigText
                     customClass={" mb-16 md:mb-2 text-4xl text-center "}
                     text={t("2")}
                   />
@@ -81,7 +81,7 @@ export const SectionFive = (props: any) => {
                   <BigText
                     customClass={" mb-16 md:mb-0 text-4xl text-center "}
                     text={t("5")}
-                  />
+                  /> */}
                 </div>
                 <div className="lg:w-5/12 flex flex-col gap-8 justify-center align-center items-center">
                   <MovingImg

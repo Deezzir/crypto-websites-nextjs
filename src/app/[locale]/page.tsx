@@ -17,9 +17,9 @@ export default function Home() {
           <SectionOne />
           <SectionTwo />
           <SectionThree />
-          <SectionFour />
+          {/* <SectionFour /> */}
           <SectionFive />
-          <SectionSix />
+          {/* <SectionSix /> */}
         </main>
         <FooterSection />
       </Banner>

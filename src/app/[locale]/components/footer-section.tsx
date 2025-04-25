@@ -11,7 +11,7 @@ export const FooterSection = () => {
   return (
     <footer className="bg-black py-2 text-center text-white backdrop-blur transition-colors duration-500">
       <p className="flex flex-row items-center justify-center gap-2">
-        <span className="text-sm font-bold sm:text-xl">$SMOB &copy; 2024</span>
+        <span className="text-sm font-bold sm:text-xl">$SMOB &copy; 2025</span>
         <span className="inline-flex">
           <a
             href={TWITTER}
