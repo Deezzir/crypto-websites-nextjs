@@ -7,11 +7,7 @@ import { DexscreenerIcon } from "../../common/icons/dexscreener-icon";
 import { DextoolsIcon } from "../../common/icons/dextools-icon";
 import {
   DEXSCREENER,
-  JUPITER,
-  RAYDIUM,
-  TELEGRAM,
   TWITTER,
-  DEXTOOLS,
   PUMP,
 } from "@/app/[locale]/urls";
 

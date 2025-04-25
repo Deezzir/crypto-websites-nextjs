@@ -1,4 +1,4 @@
-import { CANDY_MACHINE } from "@/app/[locale]/urls";
+
 import {
   CandyMachineV2,
   guestIdentity,
@@ -24,36 +24,6 @@ export const NFT = (props: any) => {
   const { connection } = useConnection();
   const wallet = useAnchorWallet();
 
-  useEffect(() => {
-    setMetaplex(
-      Metaplex.make(connection).use(
-        wallet ? walletAdapterIdentity(wallet) : guestIdentity()
-      )
-    );
-  }, [connection, wallet]);
-
-  useEffect(() => {
-    if (!metaplex) return;
-    const updateState = async () => {
-      try {
-        const state = await metaplex
-          .candyMachinesV2()
-          .findByAddress({ address: CANDY_MACHINE });
-        setCandyState(state);
-        setSoldOut(state.itemsRemaining.eqn(0) || false);
-        // setNfts(state.items);
-        setCandyStateErr(null);
-      } catch (e: any) {
-        // setCandyStateErr(props.failedTxt);
-        setCandyStateErr("Coming soon");
-      } finally {
-        setCandyStateLoading(false);
-      }
-    };
-    updateState();
-    const intervalId = setInterval(updateState, 30_000);
-    return () => clearInterval(intervalId);
-  }, [metaplex]);
 
   const mint = async () => {
     if (!metaplex || !candyState) return;

@@ -1,6 +1,5 @@
 "use client";
 
-import { RPC_ENDPOINT } from "@/app/[locale]/urls";
 import {
   ConnectionProvider,
   WalletProvider,
@@ -26,12 +25,7 @@ export const WalletNFT = (props: any) => {
 
   return (
     <>
-      <ConnectionProvider
-        endpoint={RPC_ENDPOINT}
-        config={{ commitment: "confirmed" }}
-      >
-        <WalletProvider wallets={wallets} autoConnect>
-          <WalletModalProvider className="text-black">
+
             {mounted && (
               <>
                 <AppearWrapper
@@ -92,9 +86,7 @@ export const WalletNFT = (props: any) => {
                 </AppearWrapper>
               </>
             )}
-          </WalletModalProvider>
-        </WalletProvider>
-      </ConnectionProvider>
+
     </>
   );
 };
