@@ -39,8 +39,8 @@ export const Links = (props: any) => {
       <a target="_blank" href={DEXSCREENER} className={buttonClass}>
         <DexscreenerIcon iconClass={iconClass} />
       </a>
-      <a className='w-14 h-14 hover:scale-[1.05] transition duration-100' target="_blank" href={PUMP}>
-        <img src="./logo.webp" alt="punp fun icon"/>
+      <a className={buttonClass} target="_blank" href={PUMP}>
+        <img className={iconClass} src="./logo.webp" alt="punp fun icon"/>
       </a>
       {/* <a target="_blank" href={DEXTOOLS} className={buttonClass}>
         <DextoolsIcon iconClass={iconClass} />
