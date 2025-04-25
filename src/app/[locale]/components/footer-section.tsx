@@ -21,14 +21,6 @@ export const FooterSection = () => {
           >
             <XIcon iconClass={iconClass} />
           </a>
-          <a
-            href={TELEGRAM}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="mx-[2px] rounded p-2 font-bold"
-          >
-            <TgIcon iconClass={iconClass} />
-          </a>
         </span>
       </p>
       <p className="px-2 pb-4 text-sm">{t("1")}</p>

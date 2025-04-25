@@ -47,9 +47,9 @@ export const Banner = (props: any) => {
             priority
             fetchPriority="high"
           />
-          <div className="absolute top-0 flex w-full p-4 justify-center items-start place-self-start">
+          {/* <div className="absolute top-0 flex w-full p-4 justify-center items-start place-self-start">
             <SwitchLang />
-          </div>
+          </div> */}
           <Image
             className="w-full md:w-1/2 absolute bottom-0 right-0 z-0 transform translate-y-[10%] translate-x-[12% select-none"
             src={bear}
